@@ -1,5 +1,3 @@
-import Test from './Test'
-
 const Greetings = (props) => {
 
   function HandleProps() {
@@ -11,7 +9,6 @@ const Greetings = (props) => {
   return (
     <>
       {HandleProps()}
-      <Test />
       <li>My name is { myName }</li>
       <li>And her name is { herName }</li>
     </>
