@@ -5,7 +5,7 @@ export function App() {
   const herSelf = { name: 'Chachounette', nickName: 'Lelem' }
   return (
     <>
-      <h1>Hello There</h1>
+      <h1>Hello World</h1>
       <Greetings myProps= { mySelf } herProps={ herSelf } />
     </>
   )
