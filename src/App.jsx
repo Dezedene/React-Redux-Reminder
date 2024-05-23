@@ -1,12 +1,12 @@
-import Greetings from './Greetings'
+import Car from "./components/car/Car";
+import Greetings from "./components/Greetings/Greetings";
+import "./global.css";
 
 export function App() {
-  const mySelf = { name: 'greg', nickName: 'DZN' }
-  const herSelf = { name: 'Chachounette', nickName: 'Lelem' }
   return (
     <>
-      <h1>Hello World</h1>
-      <Greetings myProps= { mySelf } herProps={ herSelf } />
+      <Car />
+      <Greetings />
     </>
-  )
+  );
 }
