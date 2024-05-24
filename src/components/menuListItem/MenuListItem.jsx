@@ -3,7 +3,6 @@ import s from "./style.module.css";
 
 const MenuListItems = (props) => {
   const [isHovered, setIsHovered] = useState(false);
-  console.log("isHovered: ", isHovered);
   return (
     <>
       <div
