@@ -1,26 +1,23 @@
-import { useState } from "react";
+import "./global.css";
 import s from "./style.module.css";
 
-import DisplayDifficulty from "./components/displayDifficulty/DisplayDifficulty";
-// import MenuListItem from "./components/menuListItem/MenuListItem";
-import MenuList from "./components/menuList/MenuList";
-
 export function App() {
-  const [currentDifficulty, setCurrentDifficulty] = useState("");
-
-  const updateDifficulty = (difficulty) => {
-    setCurrentDifficulty(difficulty);
-  };
   return (
-    <>
-      <h1 className={s.title}>Select your difficulty</h1>
-      <div className={s.workSpace}>
-        <MenuList
-          difficulty={currentDifficulty}
-          onItemClick={updateDifficulty}
-        />
-        <DisplayDifficulty difficulty={currentDifficulty} />
+    <div className={s.main_container}>
+      <div className={s.header}>
+        <div className="row">
+          <div className="col-4">
+            <div>Logo</div>
+            <div>SubTitle</div>
+          </div>
+          <div className="col-sm-12 col-md-4">
+            <input type="text" style={{ width: "100%" }}></input>
+          </div>
+        </div>
       </div>
-    </>
+
+      <div className={s.tv_show_detail}>Detail</div>
+      <div className={s.recommendations}>Recommendations</div>
+    </div>
   );
 }

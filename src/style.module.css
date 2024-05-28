@@ -1,8 +1,21 @@
-.workSpace {
+.main_container {
   display: flex;
-  justify-content: space-evenly;
+  height: 100vh;
+  padding: 25px;
+  flex-direction: column;
 }
 
-.title {
-  text-align: center;
+.header {
+  flex: 1;
+  background-color: blueviolet;
+}
+
+.tv_show_detail {
+  flex: 2;
+  background-color: aquamarine;
+}
+
+.recommendations {
+  flex: 1;
+  background-color: red;
 }
